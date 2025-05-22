@@ -23,10 +23,7 @@ Route::get('/logout', [AuthController::class, 'logout']);
 
 
 // Dashboard
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 
 // Post
 Route::resource('/posts', \App\Http\Controllers\PostController::class);
