@@ -21,14 +21,19 @@ class HomeController extends Controller
         return view('home.visimisi');
     }
 
+    public function dataguru()
+    {
+        return view('home.dataguru');
+    }
+
     public function portofolio()
     {
         return view('home.portofolio');
     }
 
-    public function contact()
+    public function kontak()
     {
-        return view('home.contact');
+        return view('home.kontak');
     }
 
     public function services()

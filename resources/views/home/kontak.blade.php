@@ -40,20 +40,21 @@
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
+                    <li><a href="home" class="active">Beranda</a></li>
                     <!-- Dropdown Menu -->
                     <li class="dropdown">
-                        <a href="home"><span>Profil</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <a href="#"><span>Profil</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             <li><a href="fasilitas">Fasilitas Sekolah</a></li>
                             <li><a href="visimisi">Visi Misi</a></li>
-                            <li><a href="Dataguru">Data Guru</a></li>
+                            <li><a href="dataguru">Data Guru</a></li>
                         </ul>
                     </li>
 
                     <li><a href="services">Services</a></li>
                     <li><a href="portofolio">Portofolio</a></li>
                     <li><a href="berita">Berita</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="kontak">Kontak</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -134,12 +135,12 @@
             </div>
         </section><!-- /Stats Section -->
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
+        <!-- kontak Section -->
+        <section id="kontak" class="kontak section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Contact</h2>
+                <h2>kontak</h2>
                 <p>Necessitatibus eius consequatur</p>
             </div><!-- End Section Title -->
 
@@ -180,7 +181,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                        <form action="forms/kontak.php" method="post" class="php-email-form" data-aos="fade-up"
                             data-aos-delay="500">
                             <div class="row gy-4">
 
@@ -214,13 +215,13 @@
 
                             </div>
                         </form>
-                    </div><!-- End Contact Form -->
+                    </div><!-- End kontak Form -->
 
                 </div>
 
             </div>
 
-        </section><!-- /Contact Section -->
+        </section><!-- /kontak Section -->
 
         <!-- Footer -->
         <footer id="footer" class="footer dark-background">
@@ -230,7 +231,7 @@
                         <a href="index.html" class="logo d-flex align-items-center">
                             <span class="sitename">Dewi</span>
                         </a>
-                        <div class="footer-contact pt-3">
+                        <div class="footer-kontak pt-3">
                             <p>A108 Adam Street</p>
                             <p>New York, NY 535022</p>
                             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
