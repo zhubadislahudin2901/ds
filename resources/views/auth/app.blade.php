@@ -21,7 +21,6 @@
     }
   </style>
 </head>
-<<<<<<< HEAD
 
 <body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
     <div class="flex min-h-screen">
@@ -43,31 +42,6 @@
             <header class="bg-white dark:bg-gray-800 shadow px-6 py-4 flex justify-between items-center">
                 <div class="text-lg font-semibold">Dashboard</div>
             </header>
-=======
-<body>
-
-<div class="container-fluid">
-  <div class="row">
-
-    <!-- SIDEBAR -->
-    <nav class="col-md-3 col-lg-2 d-md-block sidebar px-3 py-4 border-end">
-      <h4 class="mb-4">My Dashboard</h4>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a class="nav-link active" href="#">Dashboard</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">Users</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">Settings</a>
-        </li>
-        <li class="nav-item mt-4">
-          <a class="nav-link text-danger" href="#">Logout</a>
-        </li>
-      </ul>
-    </nav>
->>>>>>> 65c3d58f23e1ae354f5be85cbb336e7233a4d4ed
 
     <!-- MAIN CONTENT -->
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
