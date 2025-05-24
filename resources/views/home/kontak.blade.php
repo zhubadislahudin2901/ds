@@ -67,7 +67,7 @@
             <img src="assets/img/profilsdn01.jpg" alt="" data-aos="fade-in">
         </section><!-- /Hero Section -->
 
-        <div class="container d-flex flex-column align-items-center">
+        <div class="container d-flex flex-column align-items-center" style="background-color: #f0f8ff;">
             <h2 data-aos="fade-up" data-aos-delay="100">KONTAK KAMI</h2>
         </div>
 
