@@ -80,7 +80,7 @@
                     style="max-width: 400px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                     <h4>LOKASI SEKOLAH</h4>
                     <iframe
-                        src="https://www.google.com/maps?q=XMCP%2B836,+Dororejo,+Kec.+Doro,+Kabupaten+Pekalongan,+Jawa+Tengah+51191&output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6387985941615!2d109.68256077414318!3d-7.029213868863394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7018c062f2deb7%3A0x97878d0d96035019!2sSD%20NEGERI%2001%20DOROREJO!5e1!3m2!1sid!2sid!4v1748102330734!5m2!1sid!2sid"
                         width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen=""
                         loading="lazy">
                     </iframe>
