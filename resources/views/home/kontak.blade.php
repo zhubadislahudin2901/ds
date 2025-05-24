@@ -34,7 +34,7 @@
 
     <!-- Header -->
     <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <div class="container container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <h1 class="sitename">SDN 01 DOROREJO</h1>
             </a>

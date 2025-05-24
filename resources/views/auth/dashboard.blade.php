@@ -49,7 +49,10 @@
           <a class="nav-link text-dark" href="#">Visi Misi</a>
         </li>
         <li class="nav-item mt-4">
-          <a class="nav-link text-danger" href="#">Fasilitas</a>
+          <a class="nav-link text-dark" href="#">Fasilitas</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link text-danger" href="#">Logout</a>
         </li>
       </ul>
     </nav>
@@ -82,7 +85,6 @@
     </main>
   </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
