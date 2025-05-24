@@ -26,19 +26,14 @@ class HomeController extends Controller
         return view('home.dataguru');
     }
 
-    public function portofolio()
-    {
-        return view('home.portofolio');
-    }
-
     public function kontak()
     {
         return view('home.kontak');
     }
 
-    public function services()
+    public function akreditasi()
     {
-        return view('home.services');
+        return view('home.akreditasi');
     }
 
     public function berita()

@@ -570,6 +570,47 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+.footer-custom .info-box {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #444;
+  padding: 25px 30px;
+}
+
+.footer-custom .info-box:last-child {
+  border-right: none;
+}
+
+.footer-custom i {
+  font-size: 28px;
+  margin-right: 15px;
+  color: #ccc;
+}
+
+.footer-custom .info-text small {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.footer-custom .info-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-custom .info-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-custom .info-box {
+    border-right: none;
+    border-bottom: 1px solid #444;
+    padding: 15px 0;
+  }
+}
+
+
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -1632,6 +1673,55 @@ section,
 .team .member .social i {
   font-size: 16px;
   margin: 0 2px;
+}
+
+/*--------------------------------------------------------------
+# modif kontak
+--------------------------------------------------------------*/
+.footer-custom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #000910;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-item {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.footer-item h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-item p {
+  font-size: 14px;
+  color: #dcdcdc;
+  margin-top: 10px;
+}
+
+.footer-icon {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .footer-custom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-item {
+    width: 90%;
+  }
 }
 
 /*--------------------------------------------------------------

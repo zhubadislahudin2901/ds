@@ -56,8 +56,7 @@
                         </ul>
                     </li>
 
-                    <li><a href="services">Services</a></li>
-                    <li><a href="portofolio">Portofolio</a></li>
+                    <li><a href="akreditasi">Akreditasi</a></li>
                     <li><a href="berita">Berita</a></li>
                     <li><a href="kontak">Kontak</a></li>
                 </ul>
@@ -72,29 +71,13 @@
 
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
-
-            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-            <div class="container d-flex flex-column align-items-center">
-                <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
-                <p data-aos="fade-up" data-aos-delay="200">We are berita of talented designers making websites with
-                    Bootstrap</p>
-                <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                        class="glightbox btn-watch-video d-flex align-items-center"><i
-                            class="bi bi-play-circle"></i><span>Watch Video</span></a>
-                </div>
-            </div>
-
+            <img src="assets/img/profilsdn01.jpg" alt="" data-aos="fade-in">
         </section><!-- /Hero Section -->
 
         <!-- Stats Section -->
         <section id="stats" class="stats section light-background">
-
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-
                 <div class="row gy-4">
-
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item d-flex align-items-center w-100 h-100">
                             <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
@@ -349,12 +332,12 @@
 
         </section><!-- /Features Section -->
 
-        <!-- Services 2 Section -->
-        <section id="services-2" class="services-2 section light-background">
+        <!-- Akreditasi 2 Section -->
+        <section id="akreditasi-2" class="akreditasi-2 section light-background">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
+                <h2>Akreditasi</h2>
                 <p>CHECK OUR SERVICES</p>
             </div><!-- End Section Title -->
 
@@ -432,7 +415,7 @@
 
             </div>
 
-        </section><!-- /Services 2 Section -->
+        </section><!-- /Akreditasi 2 Section -->
 
         <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials section dark-background">
@@ -570,75 +553,45 @@
     </main>
 
     <footer id="footer" class="footer dark-background">
-
-        <div class="container footer-top">
-            <div class="row gy-4">
-                <div class="col-lg-4 col-md-6 footer-visi-misi">
-                    <a href="index.html" class="logo d-flex align-items-center">
-                        <span class="sitename">Dewi</span>
-                    </a>
-                    <div class="footer-kontak pt-3">
-                        <p>A108 Adam Street</p>
-                        <p>New York, NY 535022</p>
-                        <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                        <p><strong>Email:</strong> <span>info@example.com</span></p>
-                    </div>
-                    <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
+        <div class="footer-custom d-flex flex-wrap justify-content-center text-start">
+            <div class="info-box">
+                <i class="bi bi-telephone"></i>
+                <div class="info-text">
+                    <small>Kontak</small>
+                    <a href="tel:(024)7606340">(024) 7606340</a>
                 </div>
-
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">visi-misi us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
+            </div>
+            <div class="info-box">
+                <i class="bi bi-envelope"></i>
+                <div class="info-text">
+                    <small>Email Kami</small>
+                    <a href="mailto:sdn01dororejo@yahoo.com">sdn01dororejo@yahoo.com</a>
                 </div>
-
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                    </ul>
+            </div>
+            <div class="info-box">
+                <i class="bi bi-geo-alt"></i>
+                <div class="info-text">
+                    <small>Alamat</small>
+                    XMCP+836, Sawah Dan Kebun, Dororejo, Kec. Doro, Kabupaten Pekalongan, Jawa Tengah 51191
                 </div>
-
-                <div class="col-lg-4 col-md-12 footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Subscribe to our newsletter and receive the latest news visi-misi our products and services!</p>
-                    <form action="forms/newsletter.php" method="post" class="php-email-form">
-                        <div class="newsletter-form"><input type="email" name="email"><input type="submit"
-                                value="Subscribe"></div>
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                    </form>
-                </div>
-
             </div>
         </div>
 
+        <!-- Bagian Media Sosial -->
+        <div class="social-media d-flex justify-content-center mt-4">
+            <a href="https://facebook.com/" target="_blank" class="me-3">
+                <i class="bi bi-facebook" style="font-size: 24px; color: #fff;"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank" class="me-3">
+                <i class="bi bi-instagram" style="font-size: 24px; color: #fff;"></i>
+            </a>
+            <a href="https://youtube.com/" target="_blank">
+                <i class="bi bi-youtube" style="font-size: 24px; color: #fff;"></i>
+            </a>
+        </div>
         <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dewi</strong> <span>All Rights Reserved</span></p>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX kontak form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
+            <p>©<strong class="px-1 sitename">SDN 01 DOROREJO</strong></p>
         </div>
-
     </footer>
 
     <!-- Scroll Top -->

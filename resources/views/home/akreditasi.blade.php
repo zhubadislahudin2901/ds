@@ -51,8 +51,7 @@
                         </ul>
                     </li>
 
-                    <li><a href="services">Services</a></li>
-                    <li><a href="portofolio">Portofolio</a></li>
+                    <li><a href="akreditasi">Akreditasi</a></li>
                     <li><a href="berita">Berita</a></li>
                     <li><a href="kontak">Kontak</a></li>
                 </ul>
@@ -135,12 +134,12 @@
             </div>
         </section><!-- /Stats Section -->
 
-        <!-- Services Section -->
-        <section id="services" class="services section">
+        <!-- Akreditasi Section -->
+        <section id="akreditasi" class="akreditasi section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
+                <h2>Akreditasi</h2>
                 <p>Featured Srvices<br></p>
             </div><!-- End Section Title -->
 
@@ -151,7 +150,7 @@
                     <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="service-item">
                             <div class="img">
-                                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/akreditasi-1.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="details position-relative">
                                 <div class="icon">
@@ -169,7 +168,7 @@
                     <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                         <div class="service-item">
                             <div class="img">
-                                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/akreditasi-2.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="details position-relative">
                                 <div class="icon">
@@ -187,7 +186,7 @@
                     <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                         <div class="service-item">
                             <div class="img">
-                                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/akreditasi-3.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="details position-relative">
                                 <div class="icon">
@@ -206,70 +205,49 @@
 
             </div>
 
-        </section><!-- /Services Section -->
+        </section><!-- /Akreditasi Section -->
 
         <!-- Footer -->
         <footer id="footer" class="footer dark-background">
-            <div class="container footer-top">
-                <div class="row gy-4">
-                    <div class="col-lg-4 col-md-6 footer-visimisi">
-                        <a href="index.html" class="logo d-flex align-items-center">
-                            <span class="sitename">Dewi</span>
-                        </a>
-                        <div class="footer-kontak pt-3">
-                            <p>A108 Adam Street</p>
-                            <p>New York, NY 535022</p>
-                            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                            <p><strong>Email:</strong> <span>info@example.com</span></p>
-                        </div>
-                        <div class="social-links d-flex mt-4">
-                            <a href=""><i class="bi bi-twitter-x"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-instagram"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
-                        </div>
+            <div class="footer-custom d-flex flex-wrap justify-content-center text-start">
+                <div class="info-box">
+                    <i class="bi bi-telephone"></i>
+                    <div class="info-text">
+                        <small>Kontak</small>
+                        <a href="tel:(024)7606340">(024) 7606340</a>
                     </div>
-                    <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">visimisi us</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        </ul>
+                </div>
+                <div class="info-box">
+                    <i class="bi bi-envelope"></i>
+                    <div class="info-text">
+                        <small>Email Kami</small>
+                        <a href="mailto:sdn01dororejo@yahoo.com">sdn01dororejo@yahoo.com</a>
                     </div>
-                    <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-12 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Subscribe to our newsletter and receive the latest news visimisi our products and services!
-                        </p>
-                        <form action="forms/newsletter.php" method="post" class="php-email-form">
-                            <div class="newsletter-form">
-                                <input type="email" name="email">
-                                <input type="submit" value="Subscribe">
-                            </div>
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                        </form>
+                </div>
+                <div class="info-box">
+                    <i class="bi bi-geo-alt"></i>
+                    <div class="info-text">
+                        <small>Alamat</small>
+                        XMCP+836, Sawah Dan Kebun, Dororejo, Kec. Doro, Kabupaten Pekalongan, Jawa Tengah 51191
                     </div>
                 </div>
             </div>
+
+            <!-- Bagian Media Sosial -->
+            <div class="social-media d-flex justify-content-center mt-4">
+                <a href="https://facebook.com/" target="_blank" class="me-3">
+                    <i class="bi bi-facebook" style="font-size: 24px; color: #fff;"></i>
+                </a>
+                <a href="https://instagram.com/" target="_blank" class="me-3">
+                    <i class="bi bi-instagram" style="font-size: 24px; color: #fff;"></i>
+                </a>
+                <a href="https://youtube.com/" target="_blank">
+                    <i class="bi bi-youtube" style="font-size: 24px; color: #fff;"></i>
+                </a>
+            </div>
+
             <div class="container copyright text-center mt-4">
-                <p>&copy; <strong class="sitename">Dewi</strong> All Rights Reserved</p>
-                <div class="credits">
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                </div>
+                <p>©<strong class="px-1 sitename">SDN 01 DOROREJO</strong></p>
             </div>
         </footer>
 
