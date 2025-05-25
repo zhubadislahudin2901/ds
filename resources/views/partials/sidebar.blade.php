@@ -27,7 +27,7 @@
             </a>
         </li>
         <li class="nav-item mt-4">
-            <a class="nav-link text-danger" href="{{ url('/logout') }}">
+            <a class="nav-link text-danger" href="/logout">
                 <i class="bi bi-box-arrow-right me-2"></i> Logout
             </a>
         </li>
