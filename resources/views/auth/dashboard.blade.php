@@ -134,8 +134,8 @@
             </a>
           </li>
           <li class="nav-item mb-2">
-            <a class="nav-link" href="#">
-              <i class="bi bi-newspaper"></i> Berita
+            <a class="nav-link {{ request()->is('berita*') ? 'active' : '' }}" href="{{ route('berita.index') }}">
+              <i class="bi bi-newspaper me-2"></i> Berita
             </a>
           </li>
           <li class="nav-item mt-4">
