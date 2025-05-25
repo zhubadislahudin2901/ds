@@ -69,10 +69,9 @@
 
             <div class="container d-flex flex-column align-items-center">
                 <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
-                <p data-aos="fade-up" data-aos-delay="200">We are berita of talented designers making websites with
-                    Bootstrap</p>
+                <p data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quae laborum nesciunt ullam repudiandae debitis.</p>
                 <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                    <a href="https://www.tiktok.com/@av.shoot_/video/7387319391026760965?is_from_webapp=1&sender_device=pc&web_id=7460490930471323144"
                         class="glightbox btn-watch-video d-flex align-items-center"><i
                             class="bi bi-play-circle"></i><span>Watch Video</span></a>
                 </div>

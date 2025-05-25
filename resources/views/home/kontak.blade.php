@@ -33,7 +33,7 @@
 <body class="index-page">
 
     <!-- Header -->
-    <header  class="d-flex align-items-center fixed-top">
+    <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <h1 class="sitename">SDN 01 DOROREJO</h1>
@@ -62,7 +62,10 @@
 
     <main class="main">
 
-
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+            <img src="assets/img/profilsdn01.jpg" alt="" data-aos="fade-in">
+        </section><!-- /Hero Section -->
 
         <div class="d-flex flex-column align-items-center" style="background-color: #f0f8ff;">
             <h2 data-aos="fade-up" data-aos-delay="100">KONTAK KAMI</h2>
