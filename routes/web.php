@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BeritaController;
 
 // Home
 Route::get('/', [HomeController::class, 'index']);
@@ -24,5 +25,10 @@ Route::get('/logout', [AuthController::class, 'logout']);
 // Dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 
-// Post
-Route::resource('/posts', \App\Http\Controllers\PostController::class);
+// berita
+Route::get('/admin/berita/create', [BeritaController::class, 'create'])->name('berita.create');
+Route::post('/admin/berita/store', [BeritaController::class, 'store'])->name('berita.store');
+Route::get('/admin/berita', [BeritaController::class, 'index'])->name('berita.index');
+Route::get('/admin/berita/{id}/edit', [BeritaController::class, 'edit'])->name('berita.edit');
+Route::put('/admin/berita/{id}', [BeritaController::class, 'update'])->name('berita.update');
+Route::delete('/admin/berita/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');

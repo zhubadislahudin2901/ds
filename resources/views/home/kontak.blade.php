@@ -33,7 +33,7 @@
 <body class="index-page">
 
     <!-- Header -->
-    <header  class="d-flex align-items-center fixed-top">
+    <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <h1 class="sitename">SDN 01 DOROREJO</h1>
@@ -59,7 +59,9 @@
             </nav>
         </div>
     </header>
-
+    <div class="hero2 section dark-background" style="height: 150px;">
+        <img src="assets/img/profilsdn01.jpg" width="100%">
+    </div>
     <main class="main">
 
 

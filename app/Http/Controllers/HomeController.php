@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Berita;
 
 class HomeController extends Controller
 {
@@ -38,12 +39,12 @@ class HomeController extends Controller
 
     public function berita()
     {
-        return view('home.berita');
+        $beritas = Berita::latest()->get(); // Ambil semua berita terbaru dari database
+        return view('home.berita', compact('beritas'));
     }
 
     public function fasilitas()
     {
         return view('home.fasilitas');
     }
-
 }
