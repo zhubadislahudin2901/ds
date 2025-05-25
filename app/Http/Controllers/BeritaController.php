@@ -44,22 +44,37 @@ class BeritaController extends Controller
         return view('admin.berita.edit', compact('berita'));
     }
 
-    public function update(Request $request, $id)
-    {
-        $berita = Berita::findOrFail($id);
+public function update(Request $request, $id)
+{
+    $request->validate([
+        'judul' => 'required|string|max:255',
+        'tanggal' => 'required|date',
+        'isi' => 'required',
+        'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+    ]);
 
-        $request->validate([
-            'judul' => 'required|string|max:255',
-            'konten' => 'required',
-        ]);
+    $berita = Berita::findOrFail($id);
 
-        $berita->update([
-            'judul' => $request->judul,
-            'konten' => $request->konten,
-        ]);
+    // Upload gambar baru kalau ada
+    if ($request->hasFile('gambar')) {
+        // Hapus gambar lama
+        if ($berita->gambar && \Storage::exists($berita->gambar)) {
+            \Storage::delete($berita->gambar);
+        }
 
-        return redirect()->route('berita.index')->with('success', 'Berita berhasil diperbarui');
+        // Simpan gambar baru
+        $gambarPath = $request->file('gambar')->store('berita', 'public');
+        $berita->gambar = $gambarPath;
     }
+
+    $berita->judul = $request->judul;
+    $berita->tanggal = $request->tanggal;
+    $berita->isi = $request->isi;
+    $berita->save();
+
+    return redirect()->route('berita.index')->with('success', 'Berita berhasil diperbarui.');
+}
+
 
     public function destroy($id)
     {
