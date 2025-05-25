@@ -59,7 +59,9 @@
             </nav>
         </div>
     </header>
-
+    <div class="hero2 section dark-background" style="height: 150px;">
+        <img src="assets/img/profilsdn01.jpg" width="100%">
+    </div>
     <main class="main">
 
         <!-- Hero Section -->
