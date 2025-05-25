@@ -11,35 +11,35 @@
                 <h5>Tambah Guru</h5>
             </div>
             <div class="card-body">
-                <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('guru.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-3">
-                        <label>Judul</label>
-                        <input type="text" name="judul"
-                            class="form-control bg-dark text-white @error('judul') is-invalid @enderror" required>
-                        @error('judul') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                        <label>Nama</label>
+                        <input type="text" name="nama"
+                            class="form-control bg-dark text-white @error('nama') is-invalid @enderror" required>
+                        @error('nama') <div class="invalid-feedback">{{ $message }}</div> @enderror
                     </div>
 
                     <div class="mb-3">
-                        <label>Tanggal</label>
-                        <input type="date" name="tanggal"
-                            class="form-control bg-dark text-white @error('tanggal') is-invalid @enderror" required>
-                        @error('tanggal') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                        <label>NIP (Opsional)</label>
+                        <input type="text" name="nip"
+                            class="form-control bg-dark text-white @error('nip') is-invalid @enderror">
+                        @error('nip') <div class="invalid-feedback">{{ $message }}</div> @enderror
                     </div>
 
                     <div class="mb-3">
-                        <label>Gambar</label>
-                        <input type="file" name="gambar"
-                            class="form-control bg-dark text-white @error('gambar') is-invalid @enderror">
-                        @error('gambar') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                        <label>Mata Pelajaran</label>
+                        <input type="text" name="mapel"
+                            class="form-control bg-dark text-white @error('mapel') is-invalid @enderror" required>
+                        @error('mapel') <div class="invalid-feedback">{{ $message }}</div> @enderror
                     </div>
 
                     <div class="mb-3">
-                        <label>Isi Berita</label>
-                        <textarea name="isi" rows="5"
-                            class="form-control bg-dark text-white @error('isi') is-invalid @enderror" required></textarea>
-                        @error('isi') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                        <label>Foto</label>
+                        <input type="file" name="foto"
+                            class="form-control bg-dark text-white @error('foto') is-invalid @enderror">
+                        @error('foto') <div class="invalid-feedback">{{ $message }}</div> @enderror
                     </div>
 
                     <button type="submit" class="btn btn-primary">Simpan</button>
