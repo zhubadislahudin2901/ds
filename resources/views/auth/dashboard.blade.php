@@ -3,60 +3,83 @@
 @section('title', 'Dashboard')
 
 @section('content')
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-3">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-          </ol>
-        </nav>
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-3 bg-transparent">
+    <li class="breadcrumb-item"><a href="#" class="text-light">Home</a></li>
+    <li class="breadcrumb-item active text-light" aria-current="page">Dashboard</li>
+    </ol>
+  </nav>
 
-        <h1 class="h2 mb-3">Selamat Datang, Admin!</h1>
-        <p class="mb-4 text-white">Pantau data dan kelola informasi sekolah SDN 01 Dororejo dengan mudah.</p>
+  <h1 class="h3 mb-2 text-light fw-semibold">Selamat Datang, Admin!</h1>
+  <p class="mb-4 text-white">Pantau data dan kelola informasi sekolah <strong>SDN 01 Dororejo</strong> dengan mudah
+    dan cepat.</p>
 
-        <!-- STAT CARDS -->
-        <div class="row">
-          <div class="col-md-4 mb-4" data-aos="fade-up">
-            <div class="card shadow-sm bg-dark text-white">
-              <div class="card-body d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="card-title">Data Guru</h5>
-                  <p class="fs-3 fw-bold mb-0">12</p>
-                </div>
-                <i class="bi bi-people-fill fs-1"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card shadow-sm bg-dark text-white">
-              <div class="card-body d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="card-title">Fasilitas</h5>
-                  <p class="fs-3 fw-bold mb-0">5</p>
-                </div>
-                <i class="bi bi-building fs-1"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <a href="{{ route('berita.index') }}" class="text-decoration-none">
-              <div class="card shadow-sm bg-dark text-white">
-                <div class="card-body d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5 class="card-title">Berita</h5>
-                    <p class="fs-3 fw-bold mb-0">3</p>
-                  </div>
-                  <i class="bi bi-newspaper fs-1"></i>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
+  <!-- STAT CARDS -->
+  <div class="row">
+    <!-- Card: Data Guru -->
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+    <div class="card stat-card glass shadow-sm text-white h-100">
+      <div class="card-body d-flex justify-content-between align-items-center">
+      <div>
+        <h6 class="text-uppercase fw-semibold">Data Guru</h6>
+        <p class="fs-3 fw-bold mb-0">12</p>
+      </div>
+      <i class="bi bi-people-fill fs-1 opacity-75"></i>
+      </div>
+    </div>
     </div>
 
-    </main>
-  </div>
+    <!-- Card: Fasilitas -->
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="card stat-card glass shadow-sm text-white h-100">
+      <div class="card-body d-flex justify-content-between align-items-center">
+      <div>
+        <h6 class="text-uppercase fw-semibold">Fasilitas</h6>
+        <p class="fs-3 fw-bold mb-0">5</p>
+      </div>
+      <i class="bi bi-building fs-1 opacity-75"></i>
+      </div>
+    </div>
+    </div>
+
+    <!-- Card: Berita -->
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+    <a href="{{ route('berita.index') }}" class="text-decoration-none">
+      <div class="card stat-card glass shadow-sm text-white h-100 hover-glow">
+      <div class="card-body d-flex justify-content-between align-items-center">
+        <div>
+        <h6 class="text-uppercase fw-semibold">Berita</h6>
+        <p class="fs-3 fw-bold mb-0">3</p>
+        </div>
+        <i class="bi bi-newspaper fs-1 opacity-75"></i>
+      </div>
+      </div>
+    </a>
+    </div>
   </div>
 
+  <style>
+    .stat-card {
+    transition: 0.3s;
+    border-radius: 1rem;
+    background: rgba(40, 40, 40, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.15);
+    }
+
+    .hover-glow:hover {
+    border-color: #0dcaf0;
+    box-shadow: 0 0 10px #0dcaf0;
+    }
+
+    .breadcrumb a {
+    text-decoration: none;
+    }
+  </style>
 @endsection
