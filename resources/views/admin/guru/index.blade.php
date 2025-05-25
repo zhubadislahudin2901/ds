@@ -21,7 +21,6 @@
                     <th>No</th>
                     <th>Nama</th>
                     <th>NIP</th>
-                    <th>Jabatan</th>
                     <th>Foto</th>
                     <th>Aksi</th>
                 </tr>
@@ -32,7 +31,6 @@
                         <td>{{ $index + 1 }}</td>
                         <td>{{ $guru->nama }}</td>
                         <td>{{ $guru->nip ?? '-' }}</td>
-                        <td>{{ $guru->jabatan ?? '-' }}</td>
                         <td>
                             @if ($guru->foto)
                                 <img src="{{ asset('storage/' . $guru->foto) }}" alt="Foto" width="60">
