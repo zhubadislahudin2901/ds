@@ -20,17 +20,22 @@ class BeritaController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'judul' => 'required|string|max:255',
-            'konten' => 'required',
+            'tanggal' => 'required|date',
+            'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'isi' => 'required|string',
         ]);
 
-        Berita::create([
-            'judul' => $request->judul,
-            'konten' => $request->konten,
-        ]);
+        // Upload gambar jika ada
+        if ($request->hasFile('gambar')) {
+            $validated['gambar'] = $request->file('gambar')->store('berita', 'public');
+        }
 
-        return redirect()->route('berita.index')->with('success', 'Berita berhasil ditambahkan');
+        // Simpan ke database
+        Berita::create($validated);
+
+        return redirect()->route('berita.index')->with('success', 'Berita berhasil disimpan.');
     }
 
     public function edit($id)
