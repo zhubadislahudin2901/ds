@@ -26,7 +26,7 @@
         <table class="table table-dark table-hover">
             <thead>
                 <tr>
-                    <th>#</th>
+                    <th>No</th>
                     <th>Judul</th>
                     <th>Tanggal</th>
                     <th>Aksi</th>
