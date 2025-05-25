@@ -22,7 +22,7 @@
             </a>
         </li>
         <li class="nav-item mb-2">
-            <a class="nav-link {{ request()->is('berita*') ? 'active' : '' }}" href="{{ route('berita.index') }}">
+            <a class="nav-link {{ request()->is('berita*') ? 'active' : '' }}" href="/admin/berita">
                 <i class="bi bi-newspaper me-2"></i> Berita
             </a>
         </li>
