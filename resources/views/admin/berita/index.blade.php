@@ -6,6 +6,14 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>Data Berita</h2>
+            {{-- Form Search --}}
+            <form action="{{ route('berita.index') }}" method="GET" class="d-flex me-3">
+                <input type="text" name="search" class="form-control me-2" placeholder="Cari judul..."
+                    value="{{ request('search') }}">
+                <button class="btn btn-outline-light" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
             <a href="{{ route('berita.create') }}" class="btn btn-success">
                 <i class="bi bi-plus-circle"></i> Tambah Berita
             </a>
