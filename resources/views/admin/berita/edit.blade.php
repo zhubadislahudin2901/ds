@@ -23,7 +23,7 @@
                 <label class="text-white">Gambar (biarkan kosong jika tidak diubah)</label>
                 <input type="file" name="gambar" class="form-control bg-dark text-white">
                 @if ($berita->gambar)
-                    <small class="text-muted">Gambar sekarang:</small><br>
+                    <small class="text-white">Gambar sekarang:</small><br>
                     <img src="{{ asset('storage/' . $berita->gambar) }}" width="100">
                 @endif
             </div>
