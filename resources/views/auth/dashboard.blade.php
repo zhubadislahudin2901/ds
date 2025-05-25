@@ -12,7 +12,7 @@
         </nav>
 
         <h1 class="h2 mb-3">Selamat Datang, Admin!</h1>
-        <p class="mb-4 text-muted">Pantau data dan kelola informasi sekolah SDN 01 Dororejo dengan mudah.</p>
+        <p class="mb-4 text-white">Pantau data dan kelola informasi sekolah SDN 01 Dororejo dengan mudah.</p>
 
         <!-- STAT CARDS -->
         <div class="row">
