@@ -32,3 +32,6 @@ Route::get('/admin/berita', [BeritaController::class, 'index'])->name('berita.in
 Route::get('/admin/berita/{id}/edit', [BeritaController::class, 'edit'])->name('berita.edit');
 Route::put('/admin/berita/{id}', [BeritaController::class, 'update'])->name('berita.update');
 Route::delete('/admin/berita/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
+
+//guru
+Route::resource('guru', App\Http\Controllers\GuruController::class);
