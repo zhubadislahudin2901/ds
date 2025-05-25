@@ -7,9 +7,16 @@ use App\Models\Berita;
 
 class BeritaController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $beritas = Berita::latest()->get();
+        $query = Berita::query();
+
+        if ($request->filled('search')) {
+            $query->where('judul', 'like', '%' . $request->search . '%');
+        }
+
+        $beritas = $query->orderBy('created_at', 'desc')->get();
+
         return view('admin.berita.index', compact('beritas'));
     }
 
@@ -27,12 +34,10 @@ class BeritaController extends Controller
             'isi' => 'required|string',
         ]);
 
-        // Upload gambar jika ada
         if ($request->hasFile('gambar')) {
             $validated['gambar'] = $request->file('gambar')->store('berita', 'public');
         }
 
-        // Simpan ke database
         Berita::create($validated);
 
         return redirect()->route('berita.index')->with('success', 'Berita berhasil disimpan.');
@@ -48,17 +53,20 @@ class BeritaController extends Controller
     {
         $berita = Berita::findOrFail($id);
 
-        $request->validate([
+        $validated = $request->validate([
             'judul' => 'required|string|max:255',
-            'konten' => 'required',
+            'tanggal' => 'required|date',
+            'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'isi' => 'required|string',
         ]);
 
-        $berita->update([
-            'judul' => $request->judul,
-            'konten' => $request->konten,
-        ]);
+        if ($request->hasFile('gambar')) {
+            $validated['gambar'] = $request->file('gambar')->store('berita', 'public');
+        }
 
-        return redirect()->route('berita.index')->with('success', 'Berita berhasil diperbarui');
+        $berita->update($validated);
+
+        return redirect()->route('berita.index')->with('success', 'Berita berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -66,6 +74,6 @@ class BeritaController extends Controller
         $berita = Berita::findOrFail($id);
         $berita->delete();
 
-        return redirect()->route('berita.index')->with('success', 'Berita berhasil dihapus');
+        return redirect()->route('berita.index')->with('success', 'Berita berhasil dihapus.');
     }
 }
