@@ -8,12 +8,15 @@ return new class extends Migration {
     /**
      * Run the migrations.
      */
-    public function up()
-    {
+public function up(): void
+{
+    if (!Schema::hasColumn('beritas', 'tanggal')) {
         Schema::table('beritas', function (Blueprint $table) {
-            $table->date('tanggal')->after('judul'); // atau letakkan di tempat sesuai
+            $table->date('tanggal')->after('judul');
         });
     }
+}
+
 
     public function down()
     {

@@ -19,11 +19,12 @@
   <div class="row">
     <!-- Card: Data Guru -->
     <div class="col-md-4 mb-4" data-aos="fade-up">
-    <div class="card stat-card glass shadow-sm text-white h-100">
+    <div class="card stat-card glass shadow-sm text-white h-100 hover-glow">
       <div class="card-body d-flex justify-content-between align-items-center">
       <div>
         <h6 class="text-uppercase fw-semibold">Data Guru</h6>
-        <p class="fs-3 fw-bold mb-0">12</p>
+        <!-- Card: Data Guru -->
+<p class="fs-3 fw-bold mb-0">{{ $jumlahGuru }}</p>
       </div>
       <i class="bi bi-people-fill fs-1 opacity-75"></i>
       </div>
@@ -32,11 +33,12 @@
 
     <!-- Card: Fasilitas -->
     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-    <div class="card stat-card glass shadow-sm text-white h-100">
+    <div class="card stat-card glass shadow-sm text-white h-100 hover-glow">
       <div class="card-body d-flex justify-content-between align-items-center">
       <div>
         <h6 class="text-uppercase fw-semibold">Fasilitas</h6>
-        <p class="fs-3 fw-bold mb-0">5</p>
+<!-- Card: Fasilitas -->
+<p class="fs-3 fw-bold mb-0">{{ $jumlahFasilitas }}</p>
       </div>
       <i class="bi bi-building fs-1 opacity-75"></i>
       </div>
@@ -50,7 +52,10 @@
       <div class="card-body d-flex justify-content-between align-items-center">
         <div>
         <h6 class="text-uppercase fw-semibold">Berita</h6>
-        <p class="fs-3 fw-bold mb-0">3</p>
+
+<!-- Card: Berita -->
+<p class="fs-3 fw-bold mb-0">{{ $jumlahBerita }}</p>
+
         </div>
         <i class="bi bi-newspaper fs-1 opacity-75"></i>
       </div>

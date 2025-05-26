@@ -39,3 +39,4 @@ Route::resource('/admin/guru', App\Http\Controllers\GuruController::class);
 // visimisi
 Route::resource('/admin/visi-misi', App\Http\Controllers\VisiMisiController::class);
 
+Route::resource('/admin/fasilitas', App\Http\Controllers\FasilitasController::class);
