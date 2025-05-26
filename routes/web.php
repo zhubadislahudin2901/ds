@@ -34,8 +34,8 @@ Route::put('/admin/berita/{id}', [BeritaController::class, 'update'])->name('ber
 Route::delete('/admin/berita/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
 
 //guru
-Route::resource('guru', App\Http\Controllers\GuruController::class);
+Route::resource('/admin/guru', App\Http\Controllers\GuruController::class);
 
 // visimisi
-Route::resource('visi-misi', App\Http\Controllers\VisiMisiController::class);
+Route::resource('/admin/visi-misi', App\Http\Controllers\VisiMisiController::class);
 

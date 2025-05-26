@@ -7,12 +7,12 @@
             </a>
         </li>
         <li class="nav-item mb-2">
-            <a class="nav-link {{ request()->is('guru*') ? 'active' : '' }}" href="{{ url('/guru') }}">
+            <a class="nav-link {{ request()->is('guru*') ? 'active' : '' }}" href="{{ url('/admin/guru') }}">
                 <i class="bi bi-person-lines-fill me-2"></i> Data Guru
             </a>
         </li>
         <li class="nav-item mb-2">
-            <a class="nav-link {{ request()->is('visi-misi') ? 'active' : '' }}" href="{{ url('/visi-misi') }}">
+            <a class="nav-link {{ request()->is('visi-misi') ? 'active' : '' }}" href="{{ url('/admin/visi-misi') }}">
                 <i class="bi bi-bullseye me-2"></i> Visi Misi
             </a>
         </li>
