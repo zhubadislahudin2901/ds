@@ -35,3 +35,7 @@ Route::delete('/admin/berita/{id}', [BeritaController::class, 'destroy'])->name(
 
 //guru
 Route::resource('guru', App\Http\Controllers\GuruController::class);
+
+// visimisi
+Route::resource('visi-misi', VisiMisiController::class);
+
