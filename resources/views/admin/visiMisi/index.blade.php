@@ -6,14 +6,14 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>Data Visi & Misi</h2>
-            {{-- Form Search --}}
+            {{-- Form Search
             <form action="{{ route('visi-misi.index') }}" method="GET" class="d-flex me-3">
                 <input type="text" name="search" class="form-control me-2" placeholder="Cari visi..."
                     value="{{ request('search') }}">
                 <button class="btn btn-outline-light" type="submit">
                     <i class="bi bi-search"></i>
                 </button>
-            </form>
+            </form> --}}
             <a href="{{ route('visi-misi.create') }}" class="btn btn-success">
                 <i class="bi bi-plus-circle"></i> Tambah
             </a>
@@ -23,9 +23,9 @@
             <div class="alert alert-success">{{ session('success') }}</div>
         @endif
 
-        @if(request('search'))
+        {{-- @if(request('search'))
             <p class="text-light">Hasil pencarian untuk: <strong>{{ request('search') }}</strong></p>
-        @endif
+        @endif --}}
 
         <table class="table table-dark table-hover">
             <thead>
