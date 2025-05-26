@@ -16,10 +16,11 @@
     dan cepat.</p>
 
   <!-- STAT CARDS -->
-  <div class="row">
+  <div class="d-flex flex-row">
     <!-- Card: Data Guru -->
-    <div class="col-md-4 mb-4" data-aos="fade-up">
-    <div class="card stat-card glass shadow-sm text-white h-100 hover-glow">
+    <div class="col-md-4 mb-4 px-2" data-aos="fade-up">
+      <a href="/admin/guru" class="text-decoration-none">
+    <div class="card stat-card glass shadow-sm text-white h-100  hover-glow">
       <div class="card-body d-flex justify-content-between align-items-center">
       <div>
         <h6 class="text-uppercase fw-semibold">Data Guru</h6>
@@ -32,7 +33,8 @@
     </div>
 
     <!-- Card: Fasilitas -->
-    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="col-md-4 mb-4 px-2" data-aos="fade-up" data-aos-delay="100">
+      <a href="/admin/fasilitas" class="text-decoration-none">
     <div class="card stat-card glass shadow-sm text-white h-100 hover-glow">
       <div class="card-body d-flex justify-content-between align-items-center">
       <div>
@@ -46,7 +48,7 @@
     </div>
 
     <!-- Card: Berita -->
-    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="col-md-4 mb-4 px-2" data-aos="fade-up" data-aos-delay="200">
     <a href="{{ route('berita.index') }}" class="text-decoration-none">
       <div class="card stat-card glass shadow-sm text-white h-100 hover-glow">
       <div class="card-body d-flex justify-content-between align-items-center">
