@@ -7,9 +7,16 @@ use Illuminate\Http\Request;
 
 class GuruController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $gurus = Guru::all();
+        $query = Guru::query();
+
+        if ($request->has('search')) {
+            $query->where('nama', 'like', '%' . $request->search . '%');
+        }
+
+        $gurus = $query->latest()->paginate(10);
+
         return view('admin.guru.index', compact('gurus'));
     }
 

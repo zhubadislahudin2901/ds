@@ -7,9 +7,18 @@ use Illuminate\Http\Request;
 
 class VisiMisiController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $data = VisiMisi::all();
+        $query = VisiMisi::query();
+
+        // Fitur search
+        if ($request->has('search')) {
+            $query->where('visi', 'like', '%' . $request->search . '%');
+        }
+
+        // Gunakan paginate agar bisa tampilkan banyak data dan konsisten
+        $data = $query->latest()->paginate(10); // tampilkan 10 per halaman
+
         return view('admin.visiMisi.index', compact('data'));
     }
 
