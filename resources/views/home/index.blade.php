@@ -29,6 +29,7 @@
                                     <p class="fst-italic">{{ Str::limit($v->visi, 100) }}</p>
 
                                     <div id="visiMisiCollapse{{ $index }}" class="collapse">
+                                        <p class="fst-italic">{{ $v->visi }}</p>
                                         <h5 class="card-title text-dark mt-4">Misi</h5>
                                         <ul class="list-unstyled">
                                             @foreach(explode("\n", $v->misi) as $misi)
@@ -40,7 +41,7 @@
                                     <button class="btn btn-outline-primary btn-sm mt-3" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#visiMisiCollapse{{ $index }}" aria-expanded="false"
                                         aria-controls="visiMisiCollapse{{ $index }}">
-                                        Lihat Selengkapnya
+                                        Baca Selengkapnya
                                     </button>
                                 </div>
                             </div>
@@ -50,7 +51,7 @@
                     <!-- Kolom Fasilitas -->
                     <div class="col-md-6 mb-4" data-aos="fade-left">
                         <h4 class="mb-3 text-primary">Fasilitas Sekolah</h4>
-                        @foreach($fasilitas as $f)
+                        @foreach($fasilitas as $index => $f)
                             <div class="card shadow-sm border-0 mb-3">
                                 <div class="row g-0">
                                     <div class="col-4">
@@ -61,6 +62,16 @@
                                         <div class="card-body">
                                             <h6 class="card-title">{{ $f->nama }}</h6>
                                             <p class="card-text text-muted">{{ Str::limit($f->deskripsi, 100) }}</p>
+
+                                            <div id="fasilitasCollapse{{ $index }}" class="collapse">
+                                                <p class="card-text text-muted">{{ $f->deskripsi }}</p>
+                                            </div>
+
+                                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#fasilitasCollapse{{ $index }}"
+                                                aria-expanded="false" aria-controls="fasilitasCollapse{{ $index }}">
+                                                Baca Selengkapnya
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -70,7 +81,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Berita Terbaru -->
         <section id="berita" class="py-5 bg-light">
@@ -97,5 +107,6 @@
                 </div>
             </div>
         </section>
+
     </main>
 @endsection
