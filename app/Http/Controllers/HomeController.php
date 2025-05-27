@@ -39,8 +39,8 @@ class HomeController extends Controller
 
     public function berita()
     {
-        $beritas = Berita::latest()->get(); // Ambil semua berita terbaru dari database
-        return view('home.berita', compact('beritas'));
+        $berita = Berita::latest()->get();
+        return view('home.berita', compact('berita'));
     }
 
     public function fasilitas()
