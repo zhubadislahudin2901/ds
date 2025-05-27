@@ -4,16 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Berita;
+use App\Models\VisiMisi;
 
 class HomeController extends Controller
 {
     public function home()
     {
+
         return view('index');
     }
 
     public function index()
     {
+                $berita = Berita::latest()->take(3)->get();
+        $visiMisi = VisiMisi::all();
+
+        return view('home.index', compact('berita', 'visiMisi'));
         return view('home.index');
     }
 

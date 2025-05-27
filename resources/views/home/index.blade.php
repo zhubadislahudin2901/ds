@@ -11,6 +11,19 @@
             <img src="assets/img/profilsdn01.jpg" alt="" data-aos="fade-in">
         </section><!-- /Hero Section -->
 
+<h2>visi misi</h2>
+<ul>
+  @foreach($visiMisi as $v)
+    <li>{{ $v->visi }} - {{ $v->misi }}</li>
+  @endforeach
+</ul>
+
+<h2>Berita Terbaru</h2>
+<ul>
+  @foreach($berita as $b)
+    <li>{{ $b->judul }} - {{ $b->tanggal }}</li>
+  @endforeach
+</ul>
         <!-- Stats Section -->
         <section id="stats" class="stats section light-background">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
