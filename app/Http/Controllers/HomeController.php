@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\VisiMisi;
+use App\Models\Fasilitas;
 
 class HomeController extends Controller
 {
@@ -16,11 +17,20 @@ class HomeController extends Controller
 
     public function index()
     {
-                $berita = Berita::latest()->take(3)->get();
+        $berita = Berita::latest()->take(3)->get();
         $visiMisi = VisiMisi::all();
+        $visiMisi = VisiMisi::all();
+        $berita = Berita::latest()->take(6)->get(); // atau ->all()
+        $fasilitas = Fasilitas::all();
+
+        return view('home.index', [
+            'visiMisi' => $visiMisi,
+            'berita' => $berita,
+            'fasilitas' => $fasilitas,
+        ]);
 
         return view('home.index', compact('berita', 'visiMisi'));
-        return view('home.index');
+
     }
 
     public function visimisi()
