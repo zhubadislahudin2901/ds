@@ -21,8 +21,9 @@ class HomeController extends Controller
     {
         $berita = Berita::latest()->take(3)->get();
         $visiMisi = VisiMisi::all();
+        $fasilitas = Fasilitas::latest()->take(3)->get();
 
-        return view('home.index', compact('berita', 'visiMisi'));
+        return view('home.index', compact('berita', 'visiMisi', 'fasilitas'));
     }
 
     public function visimisi()
