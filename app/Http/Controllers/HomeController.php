@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\VisiMisi;
+use App\Models\Guru;
+use App\Models\Fasilitas;
 
 class HomeController extends Controller
 {
@@ -16,21 +18,22 @@ class HomeController extends Controller
 
     public function index()
     {
-                $berita = Berita::latest()->take(3)->get();
+        $berita = Berita::latest()->take(3)->get();
         $visiMisi = VisiMisi::all();
 
         return view('home.index', compact('berita', 'visiMisi'));
-        return view('home.index');
     }
 
     public function visimisi()
     {
-        return view('home.visimisi');
+        $visiMisi = VisiMisi::all();
+        return view('home.visimisi', compact('visiMisi'));
     }
 
     public function dataguru()
     {
-        return view('home.dataguru');
+        $guru = Guru::all();
+        return view('home.dataguru', compact('guru'));
     }
 
     public function kontak()
@@ -51,6 +54,7 @@ class HomeController extends Controller
 
     public function fasilitas()
     {
-        return view('home.fasilitas');
+        $fasilitas = Fasilitas::all();
+        return view('home.fasilitas', compact('fasilitas'));
     }
 }
