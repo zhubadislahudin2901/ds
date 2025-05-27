@@ -80,102 +80,41 @@
 
         </section><!-- /Hero Section -->
 
-        <!-- Stats Section -->
-        <section id="stats" class="stats section light-background">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="232"
-                                    data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Happy Clients</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="521"
-                                    data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Projects</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-headset color-green flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="1463"
-                                    data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Hours Of Support</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-people color-pink flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                                    class="purecounter"></span>
-                                <p>Hard Workers</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-                </div>
-            </div>
-        </section><!-- /Stats Section -->
-
-
-        <!-- visimisi Section -->
+        <!-- Visi Misi Section -->
         <section id="visimisi" class="visimisi section py-5 mt-5">
             <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-                        <img src="assets/img/visimisi.jpg" class="img-fluid rounded-4 mb-4" alt="visimisi Image">
-                        <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat
-                            debitis
-                            quia recusandae odit et consequatur voluptatem.</p>
-                        <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo
-                            officia vel. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="text-primary">Visi dan Misi</h2>
+                    <p class="text-muted">Menjadi Sekolah Dasar yang Unggul dalam Prestasi dan Berkarakter</p>
+                </div>
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                        <img src="assets/img/kartunsdai2.png" class="img-fluid rounded-4 shadow"
+                            alt="Visi Misi SDN 01 Dororejo">
                     </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-                        <div class="content ps-0 ps-lg-5">
-                            <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor incididunt ut labore.</p>
-                            <ul>
-                                <li><i class="bi bi-check-circle-fill text-primary"></i> Ullamco laboris nisi ut aliquip
-                                    ex
-                                    ea commodo consequat.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary"></i> Duis aute irure dolor in
-                                    reprehenderit in voluptate velit.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary"></i> Excepteur sint occaecat
-                                    cupidatat
-                                    non proident.</li>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                        <div class="content">
+                            <h4 class="mb-3 text-dark">Visi</h4>
+                            <p class="fst-italic">"Mewujudkan peserta didik yang cerdas, berakhlak mulia, dan berwawasan
+                                lingkungan."</p>
+                            <h4 class="mb-3 mt-4 text-dark">Misi</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i
+                                        class="bi bi-check-circle-fill text-primary me-2"></i>Menyelenggarakan
+                                    pembelajaran aktif, kreatif, dan menyenangkan.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Menanamkan
+                                    nilai-nilai kejujuran, disiplin, dan tanggung jawab.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Meningkatkan
+                                    prestasi akademik dan non-akademik.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Menumbuhkan
+                                    kepedulian terhadap lingkungan sekitar.</li>
                             </ul>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla
-                                pariatur.</p>
-                            <div class="position-relative mt-4">
-                                <img src="assets/img/visimisi-2.jpg" class="img-fluid rounded-4" alt="">
-                                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                                    class="glightbox pulsating-play-btn"><i class="bi bi-play-fill"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Footer -->
         <footer id="footer" class="footer dark-background">
