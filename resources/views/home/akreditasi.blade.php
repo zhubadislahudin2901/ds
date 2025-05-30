@@ -64,75 +64,9 @@
 
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
-
-            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-            <div class="container d-flex flex-column align-items-center">
-                <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
-                <p data-aos="fade-up" data-aos-delay="200">We are berita of talented designers making websites with
-                    Bootstrap</p>
-                <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                        class="glightbox btn-watch-video d-flex align-items-center"><i
-                            class="bi bi-play-circle"></i><span>Watch Video</span></a>
-                </div>
-            </div>
-
-        </section><!-- /Hero Section -->
-
-        <!-- Stats Section -->
-        <section id="stats" class="stats section light-background">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="232"
-                                    data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Happy Clients</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="521"
-                                    data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Projects</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-headset color-green flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="1463"
-                                    data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Hours Of Support</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-people color-pink flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                                    class="purecounter"></span>
-                                <p>Hard Workers</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-                </div>
-            </div>
-        </section><!-- /Stats Section -->
+            <img src="assets/img/profilsdn01.jpg" alt="" data-aos="fade-in">
+        </section>
+        <!-- /Hero Section -->
 
         <!-- Akreditasi Section -->
         <section id="akreditasi" class="akreditasi section">
@@ -142,70 +76,12 @@
                 <h2>Akreditasi</h2>
                 <p>Featured Srvices<br></p>
             </div><!-- End Section Title -->
-
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-
                 <div class="row gy-5">
-
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/akreditasi-1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                <div class="icon">
-                                    <i class="bi bi-activity"></i>
-                                </div>
-                                <a href="service-details.html" class="stretched-link">
-                                    <h3>Nesciunt Mete</h3>
-                                </a>
-                                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
-                                    dolores iure perferendis.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/akreditasi-2.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                <div class="icon">
-                                    <i class="bi bi-broadcast"></i>
-                                </div>
-                                <a href="service-details.html" class="stretched-link">
-                                    <h3>Eosle Commodi</h3>
-                                </a>
-                                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque
-                                    eum hic non ut nesciunt dolorem.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/akreditasi-3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                <div class="icon">
-                                    <i class="bi bi-easel"></i>
-                                </div>
-                                <a href="service-details.html" class="stretched-link">
-                                    <h3>Ledo Markt</h3>
-                                </a>
-                                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id
-                                    voluptas adipisci eos earum corrupti.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
                 </div>
-
             </div>
-
-        </section><!-- /Akreditasi Section -->
+        </section>
+        <!-- /Akreditasi Section -->
 
         <!-- Footer -->
         <footer id="footer" class="footer dark-background">

@@ -2,52 +2,39 @@
 
 @section('content')
 
-@include('layouts.navbar')
+    @include('layouts.navbar')
 
-        <!-- Hero Section -->
-        <section id="hero" class="hero section dark-background">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+        <img src="assets/img/profilsdn01.jpg" alt="" data-aos="fade-in">
+    </section>
+    <!-- /Hero Section -->
 
-            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-            <div class="container d-flex flex-column align-items-center">
-                <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
-                <p data-aos="fade-up" data-aos-delay="200">We are berita of talented designers making websites with
-                    Bootstrap</p>
-                <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                        class="glightbox btn-watch-video d-flex align-items-center"><i
-                            class="bi bi-play-circle"></i><span>Watch Video</span></a>
-                </div>
+    <!-- Visi Misi Section -->
+    <section id="visimisi" class="visimisi section py-5 mt-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="text-primary">Visi dan Misi</h2>
+                <p class="text-muted">Menjadi Sekolah Dasar yang Unggul dalam Prestasi dan Berkarakter</p>
             </div>
-
-        </section><!-- /Hero Section -->
-
-        <!-- Visi Misi Section -->
-        <section id="visimisi" class="visimisi section py-5 mt-5">
-            <div class="container">
-                <div class="section-header text-center mb-5" data-aos="fade-up">
-                    <h2 class="text-primary">Visi dan Misi</h2>
-                    <p class="text-muted">Menjadi Sekolah Dasar yang Unggul dalam Prestasi dan Berkarakter</p>
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <img src="assets/img/kartunsdai2.png" class="img-fluid rounded-4 shadow"
+                        alt="Visi Misi SDN 01 Dororejo">
                 </div>
-                <div class="row gy-4 align-items-center">
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                        <img src="assets/img/kartunsdai2.png" class="img-fluid rounded-4 shadow"
-                            alt="Visi Misi SDN 01 Dororejo">
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-                        <div class="content">
-                              @foreach($visiMisi as $v)
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="content">
+                        @foreach($visiMisi as $v)
                             <h4 class="mb-3 text-dark">Visi</h4>
                             <p class="fst-italic">{{ $v->visi }}</p>
                             <h4 class="mb-3 mt-4 text-dark">Misi</h4>
                             <ul class="list-unstyled">
-                                <li class="mb-2"><i
-                                        class="bi bi-check-circle-fill text-primary me-2"></i>{{ $v->misi }}</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>{{ $v->misi }}</li>
                             </ul>
-                            @endforeach
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
-        </section>
-        @endsection
+        </div>
+    </section>
+@endsection
