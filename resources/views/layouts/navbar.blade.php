@@ -22,11 +22,9 @@
       <li><a href="{{ url('/dataguru') }}" class="{{ Request::is('dataguru') ? 'active' : '' }}">Data Guru</a></li>
     </ul>
   </li>
-
 <li>
   <a href="{{ route('akreditasi') }}" class="{{ request()->routeIs('akreditasi') ? 'active' : '' }}">Akreditasi</a>
 </li>
-
   <li><a href="{{ url('/berita') }}" class="{{ Request::is('berita') ? 'active' : '' }}">Berita</a></li>
   <li><a href="{{ url('/kontak') }}" class="{{ Request::is('kontak') ? 'active' : '' }}">Kontak</a></li>
 </ul>
