@@ -15,7 +15,7 @@ Route::get('/home', [HomeController::class, 'index']);
 Route::get('/fasilitas', [HomeController::class, 'fasilitas']);
 Route::get('/visimisi', [HomeController::class, 'visimisi']);
 Route::get('/dataguru', [HomeController::class, 'dataguru']);
-Route::get('/akreditasi', [HomeController::class, 'akreditasi']);
+Route::get('/akreditasi', [HomeController::class, 'akreditasi'])->name('akreditasi');
 Route::get('/kontak', [HomeController::class, 'kontak']);
 Route::get('/berita', [HomeController::class, 'berita']);
 
