@@ -32,6 +32,7 @@ class BeritaController extends Controller
             'tanggal' => 'required|date',
             'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             'isi' => 'required|string',
+            'link_berita' => 'nullable|url',
         ]);
 
         if ($request->hasFile('gambar')) {
@@ -58,17 +59,15 @@ class BeritaController extends Controller
             'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             'link_berita' => 'nullable|url',
         ]);
-        $link = $request->input('link_berita');
+
         $berita = Berita::findOrFail($id);
 
-        // Upload gambar baru kalau ada
+        // Upload gambar baru jika ada
         if ($request->hasFile('gambar')) {
-            // Hapus gambar lama
-            if ($berita->gambar && \Storage::exists($berita->gambar)) {
-                \Storage::delete($berita->gambar);
+            if ($berita->gambar && \Storage::disk('public')->exists($berita->gambar)) {
+                \Storage::disk('public')->delete($berita->gambar);
             }
 
-            // Simpan gambar baru
             $gambarPath = $request->file('gambar')->store('berita', 'public');
             $berita->gambar = $gambarPath;
         }
@@ -76,15 +75,20 @@ class BeritaController extends Controller
         $berita->judul = $request->judul;
         $berita->tanggal = $request->tanggal;
         $berita->isi = $request->isi;
+        $berita->link_berita = $request->link_berita;
         $berita->save();
 
         return redirect()->route('berita.index')->with('success', 'Berita berhasil diperbarui.');
     }
 
-
     public function destroy($id)
     {
         $berita = Berita::findOrFail($id);
+
+        if ($berita->gambar && \Storage::disk('public')->exists($berita->gambar)) {
+            \Storage::disk('public')->delete($berita->gambar);
+        }
+
         $berita->delete();
 
         return redirect()->route('berita.index')->with('success', 'Berita berhasil dihapus.');
