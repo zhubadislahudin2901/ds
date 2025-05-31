@@ -6,6 +6,12 @@
             <div class="alert alert-success">{{ session('success') }}</div>
         @endif
 
+        <div class="mb-3">
+            <label for="link_berita" class="form-label">Link Berita (opsional)</label>
+            <input type="text" class="form-control" name="link_berita" id="link_berita"
+                placeholder="https://example.com/berita-anda">
+        </div>
+
         <div class="card bg-dark text-white">
             <div class="card-header">
                 <h5>Tambah Berita</h5>

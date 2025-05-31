@@ -29,7 +29,7 @@
                                     <span>{{ $b->tanggal }}</span>
                                     <p>{{ \Illuminate\Support\Str::limit(strip_tags($b->isi), 100) }}</p>
                                     <div class="text-center mt-2">
-                                        <a href="{{ route('berita.show', $b->id) }}" class="btn btn-sm btn-primary">Baca
+                                        <a href="{{ $b->link_berita }}" class="btn btn-sm btn-primary" target="_blank">Baca
                                             Selengkapnya</a>
                                     </div>
                                 </div>

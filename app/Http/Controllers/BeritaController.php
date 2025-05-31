@@ -56,8 +56,9 @@ class BeritaController extends Controller
             'tanggal' => 'required|date',
             'isi' => 'required',
             'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'link_berita' => 'nullable|url',
         ]);
-
+        $link = $request->input('link_berita');
         $berita = Berita::findOrFail($id);
 
         // Upload gambar baru kalau ada
