@@ -19,15 +19,17 @@
             </div>
             <div class="row">
                 @foreach($fasilitas as $f)
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm hover-shadow transition-all" style="border-radius: 15px;">
-                            <div class="card-body text-center p-4">
-                                <div class="mb-3">
-                                    <i class="bi bi-building fs-1 text-primary"></i>
-                                </div>
-                                <h5 class="card-title fw-bold">{{ $f->nama }}</h5>
-                                <p class="card-text text-muted">{{ $f->deskripsi }}</p>
-                            </div>
+                    <div class="col-md-6 col-lg-4 mb-5 d-flex align-items-stretch">
+                        <div class="w-100 text-center px-3" data-aos="fade-up">
+                            @if ($f->foto)
+                                <img src="{{ asset('storage/fasilitas/' . $f->foto) }}" alt="{{ $f->nama }}"
+                                    class="img-fluid rounded mb-3" style="max-height: 150px; object-fit: cover;">
+                            @else
+                                <i class="bi bi-building fs-1 text-primary mb-3"></i>
+                            @endif
+
+                            <h5 class="fw-bold">{{ $f->nama }}</h5>
+                            <p class="text-muted">{{ $f->deskripsi }}</p>
                         </div>
                     </div>
                 @endforeach

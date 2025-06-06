@@ -1,65 +1,56 @@
 @extends('layouts.home')
 
 @section('content')
-
     @include('layouts.navbar')
 
     <main class="main">
 
-        <!-- Hero Section -->
+        <!-- Hero Section (tidak diubah sesuai permintaan) -->
         <section id="hero" class="hero section dark-background">
             <img src="{{ asset('assets/img/profilsdn01.jpg') }}" alt="Profil SDN 01 Dororejo" data-aos="fade-in">
         </section>
 
         <!-- Tujuan Sekolah -->
-        <section id="tujuan" class="py-5 bg-white">
+        <section id="tujuan" class="py-5 bg-light">
             <div class="container">
                 <div class="section-header text-center mb-5" data-aos="fade-down">
                     <h2 class="text-primary">Tujuan Sekolah</h2>
                     <p class="text-muted">Tujuan pendidikan di SDN 01 Dororejo</p>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li data-aos="fade-right" data-aos-delay="100"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan keterampilan
-                                        siswa</li>
-                                    <li data-aos="fade-right" data-aos-delay="150"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan kecerdasan
-                                        siswa</li>
-                                    <li data-aos="fade-right" data-aos-delay="200"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan prestasi
-                                        akademik dan non akademik</li>
-                                    <li data-aos="fade-right" data-aos-delay="250"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan motivasi
-                                        belajar</li>
-                                    <li data-aos="fade-right" data-aos-delay="300"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan sikap santun
-                                        dan bijak semua siswa</li>
-                                    <li data-aos="fade-right" data-aos-delay="350"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan tingkat
-                                        kemandirian siswa</li>
-                                    <li data-aos="fade-right" data-aos-delay="400"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan tingkat
-                                        kedisiplinan, kejujuran dan tanggung jawab siswa</li>
-                                    <li data-aos="fade-right" data-aos-delay="450"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan perilaku
-                                        ibadah atau religius sesuai dengan agama yang dianutnya</li>
-                                    <li data-aos="fade-right" data-aos-delay="500"><i
-                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan ketertiban,
-                                        kebersihan, keindahan, kerindangan dan kenyamanan lingkungan sekolah</li>
-                                </ul>
+                <div class="row g-4">
+                    @php
+                        $tujuan = [
+                            'Meningkatkan keterampilan siswa',
+                            'Meningkatkan kecerdasan siswa',
+                            'Meningkatkan prestasi akademik dan non akademik',
+                            'Meningkatkan motivasi belajar',
+                            'Meningkatkan sikap santun dan bijak semua siswa',
+                            'Meningkatkan tingkat kemandirian siswa',
+                            'Meningkatkan tingkat kedisiplinan, kejujuran dan tanggung jawab siswa',
+                            'Meningkatkan perilaku ibadah atau religius sesuai dengan agama yang dianutnya',
+                            'Meningkatkan ketertiban, kebersihan, keindahan, kerindangan dan kenyamanan lingkungan sekolah',
+                        ];
+                    @endphp
+
+                    @foreach ($tujuan as $index => $item)
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ 100 + $index * 100 }}">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-success"><i class="bi bi-check-circle-fill me-2"></i>Tujuan
+                                        {{ $index + 1 }}
+                                    </h5>
+                                    <p class="card-text text-muted">{{ $item }}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
 
-        <section id="visimisi-fasilitas" class="py-5">
+        <!-- Visi, Misi, dan Fasilitas -->
+        <section id="visimisi-fasilitas" class="py-5 bg-white">
             <div class="container">
                 <div class="section-header text-center mb-5" data-aos="fade-up">
                     <h2 class="text-primary">Profil Sekolah</h2>
@@ -67,7 +58,7 @@
                 </div>
 
                 <div class="row">
-                    <!-- Kolom Visi Misi -->
+                    <!-- Visi Misi -->
                     <div class="col-md-6 mb-4" data-aos="fade-right">
                         <h4 class="mb-3 text-primary">Visi dan Misi</h4>
                         @foreach($visiMisi as $index => $v)
@@ -96,31 +87,25 @@
                         @endforeach
                     </div>
 
-                    <!-- Kolom Fasilitas -->
-                    <div class="col-md-6 mb-4" data-aos="fade-left">
-                        <h4 class="mb-3 text-primary">Fasilitas Sekolah</h4>
+                    <!-- Fasilitas -->
+                    <div class="col-md-6 mb-4 mx-auto" data-aos="fade-left">
+                        <h4 class="mb-4 text-center text-primary">Fasilitas Sekolah</h4>
                         @foreach($fasilitas as $index => $f)
                             <div class="card shadow-sm border-0 mb-3">
-                                <div class="row g-0">
-                                    <div class="col-4">
-                                        <!-- <img src="{{ asset('storage/fasilitas/' . $f->foto) }}"
-                                                                            class="img-fluid rounded-start h-100 object-fit-cover" alt="{{ $f->nama }}"> -->
+                                <div class="card-body">
+                                    <h6 class="card-title text-center">{{ $f->nama }}</h6>
+                                    <p class="card-text text-muted text-center">{{ Str::limit($f->deskripsi, 100) }}</p>
+
+                                    <div id="fasilitasCollapse{{ $index }}" class="collapse">
+                                        <p class="card-text text-muted text-center">{{ $f->deskripsi }}</p>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="card-body">
-                                            <h6 class="card-title">{{ $f->nama }}</h6>
-                                            <p class="card-text text-muted">{{ Str::limit($f->deskripsi, 100) }}</p>
 
-                                            <div id="fasilitasCollapse{{ $index }}" class="collapse">
-                                                <p class="card-text text-muted">{{ $f->deskripsi }}</p>
-                                            </div>
-
-                                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#fasilitasCollapse{{ $index }}"
-                                                aria-expanded="false" aria-controls="fasilitasCollapse{{ $index }}">
-                                                Baca Selengkapnya
-                                            </button>
-                                        </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-outline-primary btn-sm mt-2" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#fasilitasCollapse{{ $index }}"
+                                            aria-expanded="false" aria-controls="fasilitasCollapse{{ $index }}">
+                                            Baca Selengkapnya
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +129,8 @@
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $b->judul }}</h5>
-                                    <p class="card-text"><small
+                                    <p class="card-text">
+                                        <small
                                             class="text-muted">{{ \Carbon\Carbon::parse($b->tanggal)->format('d M Y') }}</small>
                                     </p>
                                     <a href="{{ url('berita/' . $b->id) }}" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
