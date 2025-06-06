@@ -70,18 +70,22 @@
 
         <!-- Akreditasi Section -->
         <section id="akreditasi" class="akreditasi section">
+            <div class="container text-center" data-aos="fade-up">
+                <h2 class="mb-4">Akreditasi</h2>
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Akreditasi</h2>
-                <p>Featured Srvices<br></p>
-            </div><!-- End Section Title -->
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row gy-5">
-                </div>
+                <!-- Gambar Akreditasi Responsive -->
+                <a href="assets/img/akreditas.jpg" target="_blank">
+                    <img src="assets/img/akreditas.jpg" alt="Sertifikat Akreditasi" class="img-fluid rounded shadow"
+                        style="max-width: 800px; width: 100%; height: auto;">
+                </a>
+
+
+                <!-- Deskripsi -->
+                <p class="mt-3 text-muted">Klik gambar untuk melihat lebih besar.</p>
             </div>
         </section>
-        <!-- /Akreditasi Section -->
+
+
 
         <!-- Footer -->
         <footer id="footer" class="footer dark-background">

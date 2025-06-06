@@ -27,9 +27,18 @@
                         @foreach($visiMisi as $v)
                             <h4 class="mb-3 text-dark">Visi</h4>
                             <p class="fst-italic">{{ $v->visi }}</p>
+
                             <h4 class="mb-3 mt-4 text-dark">Misi</h4>
+                            @php
+                                $misiList = preg_split('/\r\n|\r|\n/', $v->misi);
+                            @endphp
                             <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>{{ $v->misi }}</li>
+                                @foreach($misiList as $misi)
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        {{ $misi }}
+                                    </li>
+                                @endforeach
                             </ul>
                         @endforeach
                     </div>
@@ -37,4 +46,5 @@
             </div>
         </div>
     </section>
+
 @endsection

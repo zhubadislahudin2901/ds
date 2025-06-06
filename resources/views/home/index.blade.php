@@ -11,6 +11,54 @@
             <img src="{{ asset('assets/img/profilsdn01.jpg') }}" alt="Profil SDN 01 Dororejo" data-aos="fade-in">
         </section>
 
+        <!-- Tujuan Sekolah -->
+        <section id="tujuan" class="py-5 bg-white">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-down">
+                    <h2 class="text-primary">Tujuan Sekolah</h2>
+                    <p class="text-muted">Tujuan pendidikan di SDN 01 Dororejo</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li data-aos="fade-right" data-aos-delay="100"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan keterampilan
+                                        siswa</li>
+                                    <li data-aos="fade-right" data-aos-delay="150"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan kecerdasan
+                                        siswa</li>
+                                    <li data-aos="fade-right" data-aos-delay="200"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan prestasi
+                                        akademik dan non akademik</li>
+                                    <li data-aos="fade-right" data-aos-delay="250"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan motivasi
+                                        belajar</li>
+                                    <li data-aos="fade-right" data-aos-delay="300"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan sikap santun
+                                        dan bijak semua siswa</li>
+                                    <li data-aos="fade-right" data-aos-delay="350"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan tingkat
+                                        kemandirian siswa</li>
+                                    <li data-aos="fade-right" data-aos-delay="400"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan tingkat
+                                        kedisiplinan, kejujuran dan tanggung jawab siswa</li>
+                                    <li data-aos="fade-right" data-aos-delay="450"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan perilaku
+                                        ibadah atau religius sesuai dengan agama yang dianutnya</li>
+                                    <li data-aos="fade-right" data-aos-delay="500"><i
+                                            class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan ketertiban,
+                                        kebersihan, keindahan, kerindangan dan kenyamanan lingkungan sekolah</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="visimisi-fasilitas" class="py-5">
             <div class="container">
                 <div class="section-header text-center mb-5" data-aos="fade-up">
@@ -55,8 +103,8 @@
                             <div class="card shadow-sm border-0 mb-3">
                                 <div class="row g-0">
                                     <div class="col-4">
-                                        <img src="{{ asset('storage/fasilitas/' . $f->foto) }}"
-                                            class="img-fluid rounded-start h-100 object-fit-cover" alt="{{ $f->nama }}">
+                                        <!-- <img src="{{ asset('storage/fasilitas/' . $f->foto) }}"
+                                                                            class="img-fluid rounded-start h-100 object-fit-cover" alt="{{ $f->nama }}"> -->
                                     </div>
                                     <div class="col-8">
                                         <div class="card-body">
