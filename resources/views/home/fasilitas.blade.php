@@ -21,8 +21,8 @@
                 @foreach($fasilitas as $f)
                     <div class="col-md-6 col-lg-4 mb-5 d-flex align-items-stretch">
                         <div class="w-100 text-center px-3" data-aos="fade-up">
-                            @if ($f->foto)
-                                <img src="{{ asset('storage/fasilitas/' . $f->foto) }}" alt="{{ $f->nama }}"
+                            @if ($f->gambar)
+                                <img src="{{ asset('storage/fasilitas/' . $f->gambar) }}" alt="{{ $f->nama }}"
                                     class="img-fluid rounded mb-3" style="max-height: 150px; object-fit: cover;">
                             @else
                                 <i class="bi bi-building fs-1 text-primary mb-3"></i>

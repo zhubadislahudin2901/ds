@@ -93,8 +93,14 @@
                         @foreach($fasilitas as $index => $f)
                             <div class="card shadow-sm border-0 mb-3">
                                 <div class="card-body">
-                                    <h6 class="card-title text-center">{{ $f->nama }}</h6>
-                                    <p class="card-text text-muted text-center">{{ Str::limit($f->deskripsi, 100) }}</p>
+                                    <!-- <h6 class="card-title text-center">{{ $f->nama }}</h6> -->
+                                    <ul class="list-unstyled text-center">
+                                        @foreach(explode("\n", $f->nama) as $nama)
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>{{ $nama }}
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                    <!-- <p class="card-text text-muted text-center">{{ Str::limit($f->deskripsi, 100) }}</p> -->
 
                                     <div id="fasilitasCollapse{{ $index }}" class="collapse">
                                         <p class="card-text text-muted text-center">{{ $f->deskripsi }}</p>
