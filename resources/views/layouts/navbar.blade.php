@@ -27,6 +27,7 @@
 </li>
   <li><a href="{{ url('/berita') }}" class="{{ Request::is('berita') ? 'active' : '' }}">Berita</a></li>
   <li><a href="{{ url('/kontak') }}" class="{{ Request::is('kontak') ? 'active' : '' }}">Kontak</a></li>
+  <li><a href="{{ url('/organisasi') }}" class="{{ Request::is('kontak') ? 'active' : '' }}">Organisasi</a></li>
 </ul>
 
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

@@ -18,6 +18,7 @@ Route::get('/dataguru', [HomeController::class, 'dataguru']);
 Route::get('/akreditasi', [HomeController::class, 'akreditasi'])->name('akreditasi');
 Route::get('/kontak', [HomeController::class, 'kontak']);
 Route::get('/berita', [HomeController::class, 'berita']);
+Route::get('/organisasi', [HomeController::class, 'organisasi']);
 
 //Authentication
 Route::middleware('guest')->group(function () {

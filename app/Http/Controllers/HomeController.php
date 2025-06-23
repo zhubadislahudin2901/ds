@@ -59,4 +59,9 @@ class HomeController extends Controller
         $fasilitas = Fasilitas::all();
         return view('home.fasilitas', compact('fasilitas'));
     }
+
+    public function organisasi()
+    {
+        return view('home.organisasi');
+    }
 }

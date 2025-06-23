@@ -30,6 +30,36 @@
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
     <style>
+            .tree {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .box {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 10px;
+      border: 2px solid #4CAF50;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      font-weight: bold;
+    }
+    .line-down {
+      width: 2px;
+      height: 30px;
+      background: #4CAF50;
+      margin: 0 auto;
+    }
+    .horizontal-line {
+      height: 2px;
+      background: #4CAF50;
+      margin: 0 auto;
+    }
+    .tree .level {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
         /* Scroll Top Button */
         #scroll-top {
             position: fixed;
