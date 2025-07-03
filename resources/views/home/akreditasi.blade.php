@@ -52,6 +52,7 @@
                     </li>
 
                     <li><a href="akreditasi">Akreditasi</a></li>
+                    <li><a href="organisasi">Organisasi</a></li>
                     <li><a href="berita">Berita</a></li>
                     <li><a href="kontak">Kontak</a></li>
                 </ul>
