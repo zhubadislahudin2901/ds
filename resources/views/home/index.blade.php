@@ -91,7 +91,7 @@
                                 @foreach($fasilitas as $index => $f)
                                     <li class="mb-3">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="fw-semibold">{{ $f->nama }}</span>
+                                            <span class="text-dark">{{ $f->nama }}</span>
                                             <span class="text-muted ms-3"
                                                 style="white-space: nowrap;">{{ $f->deskripsi }}</span>
                                         </div>
