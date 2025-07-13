@@ -51,13 +51,3 @@ Route::middleware('auth')->group(function () {
     //Admin: Fasilitas
     Route::resource('/admin/fasilitas', FasilitasController::class);
 });
-
-// Rute admin
-Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
-});
-
-// Rute user biasa
-Route::middleware(['auth', 'role:user'])->group(function () {
-    Route::get('/user/dashboard', [UserController::class, 'index'])->name('user.dashboard');
-});
